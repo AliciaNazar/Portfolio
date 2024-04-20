@@ -1,0 +1,26 @@
+<!-- <p>Valor del scrollOffset: {{ scrollOffset }}</p> -->
+
+<nav>
+  <div class="principal">
+    <a (click)="manejarClicEnlace(4);enviarValor()" class="boton">Contacto</a>
+    <div id="pages">
+      <div class="links-column">
+        <a (click)="manejarClicEnlace(0);enviarValor()" [ngClass]="{enlaceActivo:enlaceActivo===0}">01</a>
+        <a (click)="manejarClicEnlace(1);enviarValor()" [ngClass]="{enlaceActivo:enlaceActivo===1}" >02</a>
+        <a (click)="manejarClicEnlace(2);enviarValor()"[ngClass]="{enlaceActivo:enlaceActivo===2}">03</a>
+        <a (click)="manejarClicEnlace(3);enviarValor()"[ngClass]="{enlaceActivo:enlaceActivo===3}">04</a>
+        <a (click)="manejarClicEnlace(4);enviarValor()"[ngClass]="{enlaceActivo:enlaceActivo===4}">05</a>
+      </div>
+      <div class="divider-column">
+        <a class="divider" (click)="manejarClicEnlace(0)" [ngClass]="{ seleccion: enlaceActivo === 0 }"></a>
+        <a class="divider"(click)="manejarClicEnlace(1)" [ngClass]="{ seleccion: enlaceActivo === 1 }"></a>
+        <a class="divider"(click)="manejarClicEnlace(2)" [ngClass]="{ seleccion: enlaceActivo === 2 }"></a>
+        <a class="divider"(click)="manejarClicEnlace(3)" [ngClass]="{ seleccion: enlaceActivo === 3 }"></a>
+        <a class="divider"(click)="manejarClicEnlace(4)" [ngClass]="{ seleccion: enlaceActivo === 4 }"></a>
+      </div> 
+    </div>
+  </div>
+</nav>
+
+<router-outlet />
+<!-- <p>Valor del scrollOffset: {{ scrollOffset }}</p> -->
