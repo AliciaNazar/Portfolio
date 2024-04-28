@@ -1,6 +1,7 @@
 
 <div class="estilos-generales">
-    <div class="container" *ngIf="this.valor.valorSignal() === 0"[@slideFromBottom]>
+    <!-- <div class="container" *ngIf="this.valor.valorSignal() === 0"[@slideFromBottom]> -->
+    <div class="container" [ngClass]="{'divOcultar': this.valor.valorSignal() != 0}">
         <div class="left-div">
             <p class="bienvenidos">Bienvenidos!</p>
             <h2>Yo soy</h2>
@@ -31,7 +32,8 @@
         <img src="../../../assets/onda.png" alt="" class="imagen-atras-onda">
     </div>
     
-    <div class="contenedor" *ngIf="this.valor.valorSignal() === 1"[@slideFromBottom]>
+    <!-- <div class="contenedor" *ngIf="this.valor.valorSignal() === 1"[@slideFromBottom]> -->
+        <div class="container" [ngClass]="{'divOcultar': this.valor.valorSignal() != 1}">
         <div class="arriba">
             <h1 class="fontH1">
                 <div>
@@ -122,7 +124,8 @@
         <img src="../../../assets/lenguajes.png" alt="" class="imagen-atras-lenguajes">
     </div>
     
-    <div class="contenedor" *ngIf="this.valor.valorSignal() === 2"[@slideFromBottom]>
+    <!-- <div class="contenedor" *ngIf="this.valor.valorSignal() === 2"[@slideFromBottom]> -->
+        <div class="container" [ngClass]="{'divOcultar': this.valor.valorSignal() != 2}">
         <div class="arriba">
             <h1 class="fontH1">
                 <div>
@@ -201,7 +204,7 @@
                     <img src="../../../assets/tkinter.png" class="d-block w-100 mx-auto" alt="...">
                     <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.4);">
                       <h5>Proyecto colaborativo desarrollado en Python</h5>
-                      <p>Sistema de gestión &#40;CRUD&#41; de productos en el que se hizo uso de Tkinter<a target="_blank" href="https://github.com/AliciaNazar/SistemaProductosPython" style="color:#017cff ;text-decoration: none;">Lista de Tareas</a></p>
+                      <p>Sistema de gestión &#40;CRUD&#41; de productos en el que se hizo uso de Tkinter. Github: <a target="_blank" href="https://github.com/AliciaNazar/SistemaProductosPython" style="color:#017cff ;text-decoration: none;">Lista de Tareas</a></p>
                     </div>
                   </div>
                 </div>
@@ -218,7 +221,8 @@
         
     </div>
     
-    <div class="contenedor" *ngIf="this.valor.valorSignal() === 3"[@slideFromBottom]>
+    <!-- <div class="contenedor" *ngIf="this.valor.valorSignal() === 3"[@slideFromBottom]> -->
+        <div class="container" [ngClass]="{'divOcultar': this.valor.valorSignal() != 3}">
         <div class="arriba">
             <h1 class="fontH1">
                 <div>
@@ -240,14 +244,15 @@
             </h1>
         </div>
         <div class="cv" >
-            <a href="../../../assets/cv.pdf" class="a-cv" download>
-                <img src="../../../assets/cv.jpg" alt="Mi CV">
+            <a href="../../../assets/CV - Nazar - Técnica Analista de Sistemas.pdf" class="a-cv" download>
+                <img src="../../../assets/CV - Nazar - Técnica Analista de Sistemas.png" alt="Mi CV">
             </a>
         </div>
         <!-- <img src="../../../assets/fondo-onda.gif" alt="" class="imagen-atras-onda-mov"> -->
     </div>
     
-    <div class="contenedor" *ngIf="this.valor.valorSignal() === 4"[@slideFromBottom]>
+    <!-- <div class="contenedor" *ngIf="this.valor.valorSignal() === 4"[@slideFromBottom]> -->
+        <div class="container" [ngClass]="{'divOcultar': this.valor.valorSignal() != 4}">
         <div class="arriba">
             <h1 class="fontH1">
                 <div>

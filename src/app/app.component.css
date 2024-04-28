@@ -87,3 +87,8 @@
     border-color: black;
 }
 
+nav{
+    @media (max-width: 768px){
+        display: none;
+    }
+}
