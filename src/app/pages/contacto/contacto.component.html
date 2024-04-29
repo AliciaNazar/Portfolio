@@ -1,12 +1,24 @@
-<form action="https://formsubmit.co/48fc795df6cfc2c5be1a884b956e16af" method="POST">
+<form [formGroup]="formContacto" action="https://formsubmit.co/48fc795df6cfc2c5be1a884b956e16af" method="POST" novalidate (submit)="enviar($event)">
     <label for="Nombre" aria-required="true">Nombre</label>
-    <input type="text" name="name">
+    <input type="text" name="name" placeholder="Tu Nombre">
 
     <label for="email" aria-required="true">Email</label>
-    <input type="email" name="email">
+    <input type="email" name="email" placeholder="ali@ejemplo.com" formControlName="email" [ngClass]="{'is-invalid': hasErrors('email','required')||hasErrors('email','email')}">
+    @if (hasErrors('email','required')){
+        <span class="text-danger">Debes completar este campo</span>
+    }
+    @if (hasErrors('email','email')){
+        <span class="text-danger">Formato de email inválido</span>
+    }
 
     <label for="comments" aria-required="true">Mensaje</label>
-    <textarea name="comments" id="" cols="15" rows="5" style="resize: none;"></textarea>
+    <textarea name="comments" id="" cols="15" rows="5" style="resize: none;" formControlName="mensaje" [ngClass]="{'is-invalid': hasErrors('mensaje','required')||hasErrors('mensaje','minlength')}"></textarea>
+    @if (hasErrors('mensaje','required')){
+        <span class="text-danger">Debes completar este campo</span>
+    }
+    @if (hasErrors('mensaje','minlength')){
+        <span class="text-danger">Debes emplear un mínimo de 10 caracteres</span>
+    }
 
     <input type="submit" value="Enviar" class="boton">
     <input type="hidden"name="_next" value="https://alicia-nazar.netlify.app/">

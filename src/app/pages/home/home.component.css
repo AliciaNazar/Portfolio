@@ -122,6 +122,9 @@
     filter: drop-shadow(10px 10px 5px #000000);
     width: 80%;
     height: 80%;
+    @media (max-width: 934px){
+        top:170%;
+    }
 }
 .imagen-atras-onda{
     position: absolute;
