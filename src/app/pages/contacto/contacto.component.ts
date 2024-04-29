@@ -15,6 +15,7 @@ export class ContactoComponent{
 
   constructor(private formBuilder: FormBuilder){
     this.formContacto = this.formBuilder.group({
+      name: [''],
       email: ['', [Validators.required, Validators.email]],
       mensaje: ['', [Validators.required, Validators.minLength(10)]],
     })
@@ -24,11 +25,11 @@ export class ContactoComponent{
     event.preventDefault();
     if (this.formContacto.valid) {
       const formData = new FormData();
-      formData.append('nombre', this.formContacto.value.nombre);
+      formData.append('name', this.formContacto.value.name);
       formData.append('email', this.formContacto.value.email);
       formData.append('mensaje', this.formContacto.value.mensaje);
       
-      fetch("https://formsubmit.co/48fc795df6cfc2c5be1a884b956e16af", {
+      fetch("https://formspree.io/f/xbjnwdol", {
         method: 'POST',
         body: formData
       })
