@@ -4,7 +4,13 @@
 <div *ngFor="let position of positions2" class="imagen" [style.left.px]="position.x" [style.top.px]="position.y" >
     <img src="../../../assets/star1.jpg" alt="imagen" class="imagen2">
 </div> -->
-
+<div class="animacionEstrella">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 <div class="estilos-generales">
     <!-- <div class="container" *ngIf="this.valor.valorSignal() === 0"[@slideFromBottom]> -->
     <div class="container" [ngClass]="{'divOcultar': this.valor.valorSignal() != 0}"[@slideFromBottom]>

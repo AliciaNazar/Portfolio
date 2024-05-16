@@ -461,3 +461,83 @@
     text-align: left;
     line-height: 18px;
 }
+
+
+
+.animacionEstrella span {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: rgba(56, 136, 211, 0.603);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(0, 166, 255, 0.1), 0 0 0 8px rgba(0, 166, 255, 0.1), 0 0 20px rgba(0, 166, 255, 1);
+    animation: animate 3s linear infinite;
+    z-index: -2;
+}
+
+.animacionEstrella span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-100%);
+    width: 1px;
+    height: 350px;
+    background: linear-gradient(to top, #8dd1ff42, transparent);
+    
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(480vh);
+    }
+}
+
+
+.animacionEstrella span:nth-child(1){
+    top: 0;
+    right: 18%;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 6s;
+}
+
+.animacionEstrella span:nth-child(2){
+    top: 0;
+    right: 36%;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 12s;
+}
+
+.animacionEstrella span:nth-child(3){
+    top: 0;
+    right: 54%;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 16s;
+}
+
+.animacionEstrella span:nth-child(4){
+    top: 0;
+    right: 72%;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 10s;
+}
+
+.animacionEstrella span:nth-child(5){
+    top: 0;
+    right: 90%;
+    left: initial;
+    animation-delay: 0.1s;
+    animation-duration: 18s;
+}
