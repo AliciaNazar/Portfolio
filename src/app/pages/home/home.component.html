@@ -45,7 +45,7 @@
     </div>
     
     <!-- <div class="contenedor" *ngIf="this.valor.valorSignal() === 1"[@slideFromBottom]> -->
-        <div class="contenedor" [ngClass]="{'divOcultar': this.valor.valorSignal() != 1}"[@slideFromBottom]>
+    <div class="contenedor" [ngClass]="{'divOcultar': this.valor.valorSignal() != 1}"[@slideFromBottom]>
         <div class="arriba">
             <h1 class="fontH1">
                 <div>
@@ -158,96 +158,27 @@
                 </div>
             </h1>
         </div>
-        <div class="mi-carousel">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../../../assets/TravelBooker.png" class="d-block w-100 mx-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.4);">
-                      <h5>Aplicacion hecha en Angular 17</h5>
-                      <p>Sistema de reservas de pasajes de colectivos con uso de base de datos y consumo de API creada con C#. Github: <a target="_blank" href="https://github.com/AliciaNazar/TravelBooker" style="color:#017cff ;text-decoration: none;">TravelBooker</a></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item" id="pres">
-                    <img src="../../../assets/Productos.png" class="d-block w-100 mx-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.3);">
-                        <h5>Landing Page hecha en Angular 17</h5>
-                        <p>Esta aplicación consume una API externa y permite consultar productos con sus precios, detalles e imágenes. Github: <a target="_blank" href="https://github.com/AliciaNazar/LandingPage-Angular17" style="color:#017cff ;text-decoration: none;">LandingPage</a></p>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../../assets/DentCorp.png" class="d-block w-100 mx-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.3);">
-                      <h5>Proyecto colaborativo hecho en Django para un Centro Odontológico</h5>
-                      <p>Sistema de gestión y asignación de turnos; alta, baja y modificación de usuarios. Github: <a target="_blank" href="https://github.com/AliciaNazar/DentCorp" style="color:#017cff ;text-decoration: none;">DentCorp</a></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../../assets/proyIonic.png" class="d-block w-100 mx-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
-                      <h5>Proyecto colaborativo realizado usando Ionic</h5>
-                      <p>Corresponde al diseño FrontEnd de una aplicación móvil para una red social. Github: <a target="_blank" href="https://github.com/AliciaNazar/SaltaVincula" style="color:#017cff ;text-decoration: none;">SaltaVincula</a></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../../assets/SkyNet.png" class="d-block w-100 mx-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.5);">
-                      <h5>Proyecto colaborativo de consola hecho en C#</h5>
-                      <p>Software que simula mapa, entidades mecánicas, funcionalidades avanzadas como persistencia de datos en una base SQL Server y consultas generales. Github: <a target="_blank" href="https://github.com/AliciaNazar/Sky.Net-UTN" style="color:#017cff ;text-decoration: none;">SkyNet</a></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../../assets/Lista de Tareas.png" class="d-block w-100 mx-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.4);">
-                      <h5>Lista de Tareas hecha con Angular 17</h5>
-                      <p>Esta es una aplicación para registrar y eliminar tareas a realizar. Github: <a target="_blank" href="https://github.com/AliciaNazar/lista-tareas" style="color:#017cff ;text-decoration: none;">Lista de Tareas</a></p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../../../assets/tkinter.png" class="d-block w-100 mx-auto" alt="...">
-                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.4);">
-                      <h5>Proyecto colaborativo desarrollado en Python</h5>
-                      <p>Sistema de gestión &#40;CRUD&#41; de productos en el que se hizo uso de Tkinter. Github: <a target="_blank" href="https://github.com/AliciaNazar/SistemaProductosPython" style="color:#017cff ;text-decoration: none;">Sistema Productos</a></p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div class="descripcionProyectos">
-                <h4>Descripción de proyectos:</h4><br>
-                <h5>Aplicacion hecha en Angular 17</h5>
-                <p>Sistema de reservas de pasajes de colectivos con uso de base de datos y consumo de API creada con C#. Github: <a target="_blank" href="https://github.com/AliciaNazar/TravelBooker" style="color:#017cff ;text-decoration: none;">TravelBooker</a></p>
-                <h5>Landing Page hecha en Angular 17</h5>
-                <p>Esta aplicación consume una API externa y permite consultar productos con sus precios, detalles e imágenes. Github: <a target="_blank" href="https://github.com/AliciaNazar/LandingPage-Angular17" style="color:#017cff ;text-decoration: none;">LandingPage</a></p>
-                <h5>Proyecto colaborativo hecho en Django para un Centro Odontológico</h5>
-                <p>Sistema de gestión y asignación de turnos; alta, baja y modificación de usuarios. Github: <a target="_blank" href="https://github.com/AliciaNazar/DentCorp" style="color:#017cff ;text-decoration: none;">DentCorp</a></p>
-                <h5>Proyecto colaborativo realizado usando Ionic</h5>
-                <p>Corresponde al diseño FrontEnd de una aplicación móvil para una red social. Github: <a target="_blank" href="https://github.com/AliciaNazar/SaltaVincula" style="color:#017cff ;text-decoration: none;">SaltaVincula</a></p>
-                <h5>Proyecto colaborativo de consola hecho en C#</h5>
-                <p>Software que simula mapa, entidades mecánicas, funcionalidades avanzadas como persistencia de datos en una base SQL Server y consultas generales. Github: <a target="_blank" href="https://github.com/AliciaNazar/Sky.Net-UTN" style="color:#017cff ;text-decoration: none;">SkyNet</a></p>
-                <h5>Lista de Tareas hecha con Angular 17</h5>
-                <p>Esta es una aplicación para registrar y eliminar tareas a realizar. Github: <a target="_blank" href="https://github.com/AliciaNazar/lista-tareas" style="color:#017cff ;text-decoration: none;">Lista de Tareas</a></p>
-                <h5>Proyecto colaborativo desarrollado en Python</h5>
-                <p>Sistema de gestión &#40;CRUD&#41; de productos en el que se hizo uso de Tkinter. Github: <a target="_blank" href="https://github.com/AliciaNazar/SistemaProductosPython" style="color:#017cff ;text-decoration: none;">Sistema Productos</a></p>
-                    
-              </div>
-        </div>
+        
+      
+        <ng-container *ngFor="let proyecto of proyectos; let i = index" this.actualizarIndices(i)>
+            <ng-container *ngIf="i === currentIndex">
+                <mat-card class="proyectos" [ngClass]="{'proyecto-entrada': !analizar(i), 'proyecto-salida': analizar(i)}">
+                    <mat-card-header>
+                        
+                        <mat-card-title>{{proyecto.nombre}}</mat-card-title>
+                        <mat-card-subtitle>{{proyecto.descripcion}}</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image [src]="proyecto.imagen" alt="{{proyecto.nombre}}">
+                    <mat-card-content>
+                        <p>{{proyecto.descripcionLarga}}<a target="_blank" href="proyecto.github" style="color:#017cff; text-decoration: none;">{{proyecto.nombre}}</a></p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button (click)="this.actualizarIndices(i-1)" class="botonSigAtras">&lt;</button>
+                        <button mat-button (click)="this.actualizarIndices(i+1)" class="botonSigAtras">&gt;</button>
+                      </mat-card-actions>
+                </mat-card>
+            </ng-container>
+        </ng-container>
         
     </div>
     

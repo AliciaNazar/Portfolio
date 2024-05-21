@@ -191,6 +191,10 @@
     margin: 0 10px;
     flex: 1; 
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     img{
         width: 40px;
         height: 40px;
@@ -205,6 +209,7 @@
         font-size: small;
     }
 }
+
 
 .arriba{
     margin-top: 10vh;
@@ -450,22 +455,8 @@
 
 
 
-.descripcionProyectos{
-    padding-top: 10%;
-    @media (min-width: 768px){
-        display: none;
-    }
-}
-
-.descripcionProyectos h5,p{
-    text-align: left;
-    line-height: 18px;
-}
-
-
-
 .animacionEstrella span {
-    position: absolute;
+    position: fixed;
     top: 100%;
     left: 0;
     width: 4px;
@@ -486,9 +477,7 @@
     width: 1px;
     height: 350px;
     background: linear-gradient(to top, #8dd1ff42, transparent);
-    
 }
-
 @keyframes animate {
     0% {
         transform: translateY(0);
@@ -497,9 +486,10 @@
         opacity: 1;
     }
     100% {
-        transform: translateY(480vh);
+        transform: translateY(100vh);
     }
 }
+
 
 
 .animacionEstrella span:nth-child(1){
@@ -540,4 +530,103 @@
     left: initial;
     animation-delay: 0.1s;
     animation-duration: 18s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mat-mdc-card-header {
+    justify-content: center;
+}
+.mdc-card__actions {
+    justify-content: center;
+}
+
+.proyectos {
+    background-color: rgba(0, 0, 0, 0.193);
+}
+
+.botonSigAtras{
+    background-color: rgba(150, 182, 231, 0.73);
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+
+
+/* .mat-card-header{
+	display: table;
+}
+
+.tituloProyecto { 
+	position: relative; 
+	float: left;
+	font-size: 2em;
+    font-family: monospace;
+}
+.tituloProyecto span {
+    position:absolute;
+    right:0;
+    width:0;
+    border-left: 3px solid #a4a4a4;
+    animation: escribir 3s steps(12) infinite alternate;
+    background-color: #000;
+    
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+} */
+
+
+/* .proyectos {
+    transition: all 0.5s ease;
+}
+
+.proyecto-entrada {
+    animation: cardEnterAnimation 5s ease;
+}
+
+.proyecto-salida {
+    animation: cardExitAnimation 5s ease;
+} */
+
+@keyframes cardEnterAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes cardExitAnimation {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
 }
