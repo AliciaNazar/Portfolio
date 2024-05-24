@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contacto',
@@ -33,10 +34,22 @@ export class ContactoComponent{
         method: 'POST',
         body: formData
       })
-      alert("Formulario enviado exitosamente")
+      // alert("Formulario enviado exitosamente")
+      Swal.fire({
+        title: 'Envío exitoso',
+        text: 'Se ha enviado el formulario correctamente',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      })
     }
     else {
-      alert('El formulario no es válido');
+      // alert('El formulario no es válido');
+      Swal.fire({
+        title: 'Error',
+        text: 'Ha ocurrido un error al enviar el formulario',
+        icon: 'error',
+        confirmButtonText: 'OK'
+      })
     }
   }
 
