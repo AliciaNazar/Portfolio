@@ -52,6 +52,13 @@ analizar(nuevoIndex: number): boolean {
 
   proyectos: Proyecto[] = [
     {
+      nombre: "",
+      descripcion: "",
+      imagen: "",
+      descripcionLarga:"",
+      github: ""
+    },
+    {
       nombre: "TravelBooker",
       descripcion: "Aplicacion hecha en Angular 17",
       imagen: "../../../assets/TravelBooker.png",

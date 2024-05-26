@@ -162,9 +162,8 @@
       
         <ng-container *ngFor="let proyecto of proyectos; let i = index" this.actualizarIndices(i)>
             <ng-container *ngIf="i === currentIndex">
-                <mat-card class="proyectos" [ngClass]="{'proyecto-entrada': !analizar(i), 'proyecto-salida': analizar(i)}">
+                <mat-card class="proyectos">
                     <mat-card-header>
-                        
                         <mat-card-title>{{proyecto.nombre}}</mat-card-title>
                         <mat-card-subtitle>{{proyecto.descripcion}}</mat-card-subtitle>
                     </mat-card-header>
